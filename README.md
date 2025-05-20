@@ -54,7 +54,7 @@ python insert_municipios.py
 
 ```bash
 poetry install
-poetry run python main.py
+poetry run python insert_municipios.py
 ```
 
 # Arquivos DML e Views
