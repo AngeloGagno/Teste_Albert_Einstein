@@ -25,6 +25,4 @@ class GetFiles:
         dfs = [pd.read_csv(file,sep=sep,encoding=encode) for file in csv_files]
         df_final = pd.concat(dfs, ignore_index=True)
 
-        #for file in csv_files:
-        #    file.unlink()
         return df_final
