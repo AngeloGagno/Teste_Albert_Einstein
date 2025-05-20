@@ -8,12 +8,12 @@ import streamlit as st
 from frontend.app import CSVUploader
 
 def executar_pipeline_e_insercao():
-    uploader = CSVUploader(engine=Config().engine_creator(), table_name='diseaseSummary')
+    uploader = CSVUploader(engine=Config().engine_creator(), table_name='diseaseSummary',title='Sistema de Insersão de dados')
 
     if uploader.upload():
         uploader.show_preview()
 
-        if st.button("⚙️ Transformar dados e Inserir no banco"):
+        if st.button("Transformar dados e Inserir no banco"):
             uploader.insert_to_db()
 
 def send_to_db():

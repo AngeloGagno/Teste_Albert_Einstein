@@ -5,8 +5,9 @@ from transform.disease_table import Pipeline_transform_disease_table
 
 
 class CSVUploader:
-    def __init__(self, engine, table_name: str, label="Escolha um arquivo CSV", file_types=["csv"]):
+    def __init__(self, engine, table_name: str, title:str, label="Escolha um arquivo CSV", file_types=["csv"]):   
         st.set_page_config(page_title="Uploader CSV com Transformação", layout="wide")
+        st.title(title)
         self.label = label
         self.file_types = file_types
         self.table_name = table_name
