@@ -1,4 +1,4 @@
-# 🧪 Teste Albert Einstein  
+# Teste Albert Einstein  
 Projeto prático de ETL com Streamlit, SQL e Python
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Online-brightgreen?logo=streamlit)](https://teste-alberteinstein.streamlit.app/)
@@ -6,19 +6,9 @@ Projeto prático de ETL com Streamlit, SQL e Python
 [![Documentation](https://img.shields.io/badge/docs-online-blue?logo=githubpages)](https://angelogagno.github.io/Teste_Albert_Einstein/)
 
 ---
+## Arquitetura do Projeto
 
-## Sumário
-
-- [Como Usar](#-como-usar)
-  - [Acesso ao Frontend](#-acesso-ao-frontend)
-  - [Execução Local](#-execução-local)
-    - [Configuração do Ambiente](#-configuração-do-ambiente)
-    - [Ingestão da Tabela de Municípios](#-ingestão-da-tabela-de-municípios)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Documentação](#-documentação)
-- [Arquitetura do Projeto](#️-arquitetura-do-projeto)
-
----
+![Infraestrutura do Projeto](assets/Estrutura_Projeto.jpg)
 
 ## Como Usar
 
@@ -79,6 +69,3 @@ arquivos_dml/ → scripts DML (.sql)
 Acesse a documentação completa do projeto:
 [Documentação](https://angelogagno.github.io/Teste_Albert_Einstein/)
 
-## Arquitetura do Projeto
-
-![Infraestrutura do Projeto](assets/Estrutura_Projeto.jpg)
