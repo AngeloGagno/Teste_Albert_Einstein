@@ -1,0 +1,4 @@
+DB_HOST=HOSTNAME # Host do banco
+DATABASE=master # Nome do Banco de dados
+USER=username # Usuario de acesso ao banco
+PASSWORD=password # Senha do usuario
