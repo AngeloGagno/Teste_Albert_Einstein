@@ -9,25 +9,22 @@ class GetFiles:
     def path(self,file_name:str):
         '''Retorna o caminho da pasta onde contem os arquivos csv'''
         actual_path = Path.cwd()
-        return actual_path.parents[2] / file_name
+        return actual_path.parents[1] / file_name
 
     def fetch_all_folders(self):
         '''Acessa a pasta que contem os arquivos csv e retorna uma lista com todos'''
         path = self.path
         return [str(folder) for folder in path.rglob("*.csv")]
             
-    def merge_and_delete_csvs(self):
+    def merge_and_delete_csvs(self,sep=',',encode= 'UTF-8'):
         '''Une os arquivos CSV contidos na pasta que contem os arquivos csv'''
         csv_files = self.fetch_all_folders()
         if not csv_files:
             print("Nenhum arquivo CSV encontrado.")
             return None
-        dfs = [pd.read_csv(file,sep=';') for file in csv_files]
+        dfs = [pd.read_csv(file,sep=sep,encoding=encode) for file in csv_files]
         df_final = pd.concat(dfs, ignore_index=True)
 
         #for file in csv_files:
         #    file.unlink()
         return df_final
-
-
-print(GetFiles('dados por uf').merge_and_delete_csvs().iloc[:,61])
