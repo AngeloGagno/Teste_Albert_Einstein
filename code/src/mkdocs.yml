@@ -1,0 +1,54 @@
+site_name: Teste Albert Einstein - ETL
+site_author: Angelo Gagno
+repo_url: https://github.com/AngeloGagno/Teste_Albert_Einstein
+repo_name: Teste_Albert_Einstein
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: indigo
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+
+
+nav:
+  - Início: index.md
+  - Visão Geral: visao_geral.md
+  - ETL: etl.md
+  - Banco de Dados: banco_de_dados.md
+  - Frontend: frontend.md
+  - Configuração: configuracao.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - tables
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+  - pymdownx.keys
+  - pymdownx.mark
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AngeloGagno/Teste_Albert_Einstein
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/angelogagno/
